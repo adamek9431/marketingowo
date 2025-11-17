@@ -1,8 +1,10 @@
 {
-  "name": "landing-page",
+  "name": "marketingowo-landing",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Landing page for marketingowo.org domain sale",
+  "keywords": ["marketingowo", "marketing", "landing-page", "react", "vite"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -22,5 +24,9 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
