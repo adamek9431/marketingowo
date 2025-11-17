@@ -1,7 +1,7 @@
 
-  # Simple Landing Page
+  # Marketingowo.org
 
-  This is a code bundle for Simple Landing Page. The original project is available at https://www.figma.com/design/AZ7eXVTDKso8BHCkH8NU5E/Simple-Landing-Page.
+  This is a code bundle for Marketingowo.org. The original project is available at https://www.figma.com/design/AZ7eXVTDKso8BHCkH8NU5E/Marketingowo.org.
 
   ## Running the code
 
