@@ -9,7 +9,9 @@
     "dev": "vite",
     "build": "vite build",
     "build:check": "tsc && vite build",
-    "preview": "vite preview"
+    "build:verbose": "vite build --debug",
+    "preview": "vite preview",
+    "test:build": "bash test-build.sh"
   },
   "dependencies": {
     "react": "^18.2.0",

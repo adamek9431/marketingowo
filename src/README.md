@@ -2,6 +2,14 @@
 
 Strona landing page dla domeny **marketingowo.org**, zoptymalizowana pod SEO dla frazy "marketingowo".
 
+## 🔥 WAŻNE: CSS Fix Applied
+
+**Jeśli strona wyświetla się bez stylów** - przeczytaj: **[CLOUDFLARE-FIX.md](./CLOUDFLARE-FIX.md)**
+
+Zastosowano **inline styles** jako fallback - strona zawsze będzie wyglądać dobrze! ✅
+
+---
+
 ## 🚀 Cloudflare Pages - Deployment Instructions
 
 ### ⚠️ WAŻNE: Framework Detection
@@ -110,21 +118,33 @@ Domena na sprzedaż. Kontakt telefoniczny:
 
 ## 🐛 Troubleshooting
 
-### Problem: CSS nie ładuje się na Cloudflare
+### Problem: CSS nie ładuje się na Cloudflare (Strona wygląda jak czysty HTML)
 **Rozwiązanie:** 
-1. Sprawdź czy framework jest ustawiony na `None` lub `Vite`
-2. Upewnij się że build command to `npm run build` (bez `tsc`)
-3. Retry deployment
+1. Sprawdź czy framework jest ustawiony na `None` (nie `Vite`, nie `React`)
+2. Upewnij się że build command to **TYLKO** `npm run build`
+3. Build output directory: `dist`
+4. Sprawdź build logs - czy pojawia się `dist/assets/index-*.css`?
+5. Jeśli nie ma .css w build output:
+   - Sprawdź czy `postcss.config.js` i `tailwind.config.js` są w repo
+   - Sprawdź czy `main.tsx` importuje `./styles/globals.css`
+6. **FALLBACK:** Obecna wersja używa inline styles, więc strona będzie wyglądać dobrze nawet bez Tailwind
 
 ### Problem: Cloudflare pokazuje "Docusaurus" jako framework
 **Rozwiązanie:**
 1. Idź do Settings → Build & Deploy
-2. Zmień Framework preset na `None`
+2. Zmień Framework preset na `None` (nie wybieraj nic innego!)
 3. Zapisz i retry deployment
 
 ### Problem: Build fails z błędami TypeScript
 **Rozwiązanie:**
 Użyj `npm run build` zamiast `npm run build:check`
+
+### Problem: Strona pokazuje treść ale bez kolorów/styli
+**Rozwiązanie:**
+- To oznacza że React działa ale CSS się nie załadował
+- Sprawdź w DevTools → Network → czy plik `.css` się ładuje
+- Jeśli nie - problem z build configuration
+- Obecna wersja ma inline styles jako fallback
 
 ---
 

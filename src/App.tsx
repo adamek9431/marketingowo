@@ -1,49 +1,124 @@
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div style={{ 
+      minHeight: '100vh', 
+      backgroundColor: '#ffffff',
+      fontFamily: 'system-ui, -apple-system, sans-serif'
+    }}>
       {/* Hero Section */}
-      <main className="min-h-screen flex items-center justify-center px-4 py-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="mb-8">
+      <main style={{ 
+        minHeight: '100vh', 
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        padding: '48px 16px'
+      }}>
+        <div style={{ 
+          maxWidth: '896px', 
+          margin: '0 auto', 
+          textAlign: 'center' 
+        }}>
+          <h1 style={{ 
+            fontSize: '3rem',
+            fontWeight: '700',
+            marginBottom: '32px',
+            color: '#000000'
+          }}>
             Marketingowo.org
           </h1>
           
-          <p className="mb-8 text-gray-700">
+          <p style={{ 
+            fontSize: '1.125rem',
+            marginBottom: '32px', 
+            color: '#374151',
+            lineHeight: '1.75'
+          }}>
             Domena premium idealna dla agencji marketingowych, firm reklamowych i specjalistów SEO
           </p>
           
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg shadow-lg mb-12">
-            <h2 className="mb-4">
+          <div style={{ 
+            background: 'linear-gradient(to right, #eff6ff, #faf5ff)',
+            padding: '32px',
+            borderRadius: '8px',
+            boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+            marginBottom: '48px'
+          }}>
+            <h2 style={{ 
+              fontSize: '2rem',
+              fontWeight: '600',
+              marginBottom: '16px',
+              color: '#000000'
+            }}>
               Chcesz kupić tę domenę?
             </h2>
-            <p className="mb-4 text-gray-700">
+            <p style={{ 
+              fontSize: '1rem',
+              marginBottom: '16px', 
+              color: '#374151'
+            }}>
               Skontaktuj się z nami telefonicznie
             </p>
             <a 
               href="tel:+48694435251" 
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors text-xl"
+              style={{ 
+                display: 'inline-block',
+                backgroundColor: '#2563eb',
+                color: '#ffffff',
+                padding: '16px 32px',
+                borderRadius: '8px',
+                fontSize: '1.25rem',
+                fontWeight: '600',
+                textDecoration: 'none',
+                transition: 'background-color 0.2s'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#1d4ed8'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#2563eb'}
             >
               📞 +48 694 435 251
             </a>
           </div>
 
           {/* SEO Content */}
-          <div className="text-left space-y-6 mt-12">
-            <section>
-              <h2 className="mb-3">
+          <div style={{ 
+            textAlign: 'left', 
+            marginTop: '48px' 
+          }}>
+            <section style={{ marginBottom: '24px' }}>
+              <h2 style={{ 
+                fontSize: '1.875rem',
+                fontWeight: '600',
+                marginBottom: '12px',
+                color: '#000000'
+              }}>
                 Dlaczego Marketingowo.org?
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p style={{ 
+                fontSize: '1rem',
+                color: '#374151', 
+                marginBottom: '16px',
+                lineHeight: '1.625'
+              }}>
                 Marketingowo to krótka, łatwa do zapamiętania domena, która idealnie pasuje do branży marketingowej. 
                 W dzisiejszych czasach silna obecność online zaczyna się od dobrej domeny.
               </p>
             </section>
 
-            <section>
-              <h3 className="mb-3">
+            <section style={{ marginBottom: '24px' }}>
+              <h3 style={{ 
+                fontSize: '1.5rem',
+                fontWeight: '600',
+                marginBottom: '12px',
+                color: '#000000'
+              }}>
                 Dla kogo ta domena?
               </h3>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <ul style={{ 
+                listStyleType: 'disc',
+                listStylePosition: 'inside',
+                color: '#374151',
+                fontSize: '1rem',
+                lineHeight: '2'
+              }}>
                 <li>Agencje marketingowe i reklamowe</li>
                 <li>Freelancerzy specjalizujący się w marketingu internetowym</li>
                 <li>Firmy świadczące usługi SEO i SEM</li>
@@ -53,11 +128,21 @@ export default function App() {
               </ul>
             </section>
 
-            <section>
-              <h3 className="mb-3">
+            <section style={{ marginBottom: '24px' }}>
+              <h3 style={{ 
+                fontSize: '1.5rem',
+                fontWeight: '600',
+                marginBottom: '12px',
+                color: '#000000'
+              }}>
                 Korzyści z domeny Marketingowo
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p style={{ 
+                fontSize: '1rem',
+                color: '#374151', 
+                marginBottom: '16px',
+                lineHeight: '1.625'
+              }}>
                 Domena zawierająca słowo kluczowe "marketingowo" ułatwia pozycjonowanie w wyszukiwarkach internetowych. 
                 To inwestycja w rozpoznawalność marki i profesjonalny wizerunek Twojej firmy marketingowej.
               </p>
@@ -65,7 +150,11 @@ export default function App() {
           </div>
 
           {/* Footer with schema.org markup */}
-          <footer className="mt-16 pt-8 border-t border-gray-200">
+          <footer style={{ 
+            marginTop: '64px', 
+            paddingTop: '32px', 
+            borderTop: '1px solid #e5e7eb' 
+          }}>
             <div itemScope itemType="https://schema.org/Product">
               <meta itemProp="name" content="Marketingowo.org - Domena Premium" />
               <meta itemProp="description" content="Domena internetowa marketingowo.org na sprzedaż" />
@@ -74,7 +163,10 @@ export default function App() {
                 <meta itemProp="priceCurrency" content="PLN" />
               </div>
             </div>
-            <p className="text-gray-600 text-sm">
+            <p style={{ 
+              color: '#6b7280', 
+              fontSize: '0.875rem' 
+            }}>
               © 2025 Marketingowo.org
             </p>
           </footer>

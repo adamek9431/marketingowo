@@ -15,6 +15,12 @@ export default defineConfig({
     assetsDir: 'assets',
     sourcemap: false,
     minify: 'esbuild',
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[hash][extname]',
+      },
+    },
   },
   css: {
     postcss: './postcss.config.js',

@@ -83,12 +83,28 @@ dist/assets/index-xyz789.css       8.45 kB │ gzip:  2.31 kB
 Build completed successfully!
 ```
 
+### ⚠️ WAŻNE: Sprawdź czy jest plik .css
+
+W build logu **MUSI** pojawić się linia:
+```
+dist/assets/index-[hash].css
+```
+
+Jeśli nie ma - Tailwind się nie skompilował!
+
 ### ❌ Build NIE powinien zawierać:
 
 ```bash
 Error: Cannot find module 'docusaurus'
 Error: Could not resolve "@docusaurus/core"
 ```
+
+### 🛡️ Fallback Protection
+
+**DOBRA WIADOMOŚĆ:** Obecna wersja używa **inline styles** jako fallback.
+Nawet jeśli Tailwind CSS się nie załaduje, strona będzie wyglądać dobrze!
+
+To temporary workaround do czasu naprawy Tailwind compilation na Cloudflare.
 
 ---
 
