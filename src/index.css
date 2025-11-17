@@ -42,7 +42,6 @@
     --color-gray-200: oklch(.928 .006 264.531);
     --color-gray-600: oklch(.446 .03 256.802);
     --color-gray-700: oklch(.373 .034 259.733);
-    --color-gray-900: oklch(.21 .034 264.665);
     --color-white: #fff;
     --spacing: .25rem;
     --container-4xl: 56rem;
@@ -306,13 +305,9 @@
     outline-color: color-mix(in oklab, oklch(.708 0 0) 50%, transparent);
   }
 
-  * {
-    border-color: var(--color-gray-200);
-  }
-
   body {
-    background-color: var(--color-white);
-    color: var(--color-gray-900);
+    background-color: oklch(1 0 0);
+    color: oklch(.145 0 0);
   }
 }
 
