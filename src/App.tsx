@@ -5,7 +5,7 @@ export default function App() {
       <main className="min-h-screen flex items-center justify-center px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="mb-8">
-            Marketingowo.pl
+            Marketingowo.org
           </h1>
           
           <p className="mb-8 text-gray-700">
@@ -31,7 +31,7 @@ export default function App() {
           <div className="text-left space-y-6 mt-12">
             <section>
               <h2 className="mb-3">
-                Dlaczego Marketingowo.pl?
+                Dlaczego Marketingowo.org?
               </h2>
               <p className="text-gray-700 mb-4">
                 Marketingowo to krótka, łatwa do zapamiętania domena, która idealnie pasuje do branży marketingowej. 
@@ -67,15 +67,15 @@ export default function App() {
           {/* Footer with schema.org markup */}
           <footer className="mt-16 pt-8 border-t border-gray-200">
             <div itemScope itemType="https://schema.org/Product">
-              <meta itemProp="name" content="Marketingowo.pl - Domena Premium" />
-              <meta itemProp="description" content="Domena internetowa marketingowo.pl na sprzedaż" />
+              <meta itemProp="name" content="Marketingowo.org - Domena Premium" />
+              <meta itemProp="description" content="Domena internetowa marketingowo.org na sprzedaż" />
               <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
                 <meta itemProp="availability" content="https://schema.org/InStock" />
                 <meta itemProp="priceCurrency" content="PLN" />
               </div>
             </div>
             <p className="text-gray-600 text-sm">
-              © 2024 Marketingowo.pl - Wszystkie prawa zastrzeżone
+              © 2025 Marketingowo.org
             </p>
           </footer>
         </div>
