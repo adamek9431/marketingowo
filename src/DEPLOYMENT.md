@@ -34,8 +34,10 @@ Project → Settings → Builds & Deployments
 |---------|-------|
 | **Framework preset** | `None` (lub `Vite`) |
 | **Build command** | `npm run build` |
-| **Build output directory** | `dist` |
+| **Build output directory** | `build` ⚠️ |
 | **Root directory (advanced)** | `/` (pusty lub `/`) |
+
+⚠️ **WAŻNE:** Vite 6.x zmienił domyślny output folder z `dist` na `build`!
 
 ### 5️⃣ W sekcji Environment variables (opcjonalnie):
 

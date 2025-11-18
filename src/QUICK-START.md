@@ -5,9 +5,11 @@
 ```
 Framework:    None
 Build:        npm run build
-Output:       dist
+Output:       build
 Root:         /
 ```
+
+⚠️ **WAŻNE:** Output musi być `build` (nie `dist`) bo Vite 6.x zmienił domyślny folder!
 
 ---
 
@@ -29,7 +31,7 @@ Idź do: **Settings → Builds & Deployments → Edit configuration**
 |------|---------|
 | Framework preset | **None** |
 | Build command | `npm run build` |
-| Build output directory | `dist` |
+| Build output directory | `build` |
 | Root directory | `/` |
 
 **Kliknij Save**

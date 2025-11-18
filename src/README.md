@@ -2,9 +2,13 @@
 
 Strona landing page dla domeny **marketingowo.org**, zoptymalizowana pod SEO dla frazy "marketingowo".
 
-## 🔥 WAŻNE: CSS Fix Applied
+## 🔥 WAŻNE: Known Issues & Fixes
 
-**Jeśli strona wyświetla się bez stylów** - przeczytaj: **[CLOUDFLARE-FIX.md](./CLOUDFLARE-FIX.md)**
+**🎯 QUICK FIX:** [FIX-SUMMARY.md](./FIX-SUMMARY.md) - Rozwiązanie w 30 sekund!  
+**📋 DEPLOYMENT:** [DEPLOYMENT-CHECKLIST.md](./DEPLOYMENT-CHECKLIST.md) - Krok po kroku  
+
+**Problem: "Output directory 'dist' not found"** → **[VITE6-FIX.md](./VITE6-FIX.md)** ⚡  
+**Problem: Strona bez stylów (CSS)** → **[CLOUDFLARE-FIX.md](./CLOUDFLARE-FIX.md)**
 
 Zastosowano **inline styles** jako fallback - strona zawsze będzie wyglądać dobrze! ✅
 
@@ -122,8 +126,8 @@ Domena na sprzedaż. Kontakt telefoniczny:
 **Rozwiązanie:** 
 1. Sprawdź czy framework jest ustawiony na `None` (nie `Vite`, nie `React`)
 2. Upewnij się że build command to **TYLKO** `npm run build`
-3. Build output directory: `dist`
-4. Sprawdź build logs - czy pojawia się `dist/assets/index-*.css`?
+3. Build output directory: `build` ⚠️ (Vite 6.x zmienił z `dist` na `build`)
+4. Sprawdź build logs - czy pojawia się `build/assets/index-*.css`?
 5. Jeśli nie ma .css w build output:
    - Sprawdź czy `postcss.config.js` i `tailwind.config.js` są w repo
    - Sprawdź czy `main.tsx` importuje `./styles/globals.css`

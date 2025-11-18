@@ -74,9 +74,11 @@ Ustaw:
 ```
 Framework preset:          None
 Build command:             npm run build
-Build output directory:    dist
+Build output directory:    build
 Root directory:            / (lub puste)
 ```
+
+⚠️ **WAŻNE:** Vite 6.x używa `build/` zamiast `dist/`!
 
 **WAŻNE:** Framework preset MUSI być `None`, nie `React`, nie `Vite`!
 
